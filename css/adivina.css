@@ -1,0 +1,130 @@
+body {
+  padding: 100px;
+  background: #FF512F;  
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F); 
+  background: linear-gradient(to right, #DD2476, #FF512F); 
+  ;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #80D0C7;
+  margin: 100px auto;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.guess-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 350px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.life-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.life {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: red;
+}
+
+.life.grayscale {
+  background-color: gray;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.result-message {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.popup {
+  font-size: larger;
+  position: fixed;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgb(250, 253, 169);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  text-align: center;
+  width: 350px; /* Modifica el ancho según tus necesidades */
+  height: 200px; /* Modifica la altura según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-message {
+  margin-bottom: 20px;
+  color: rgb(7, 86, 147);
+}
+
+.popup-buttons {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+.popup-buttons button {
+  margin-top: 10px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background-color: #45a049;
+}
+
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #888;
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+.popup p span {
+  font-weight: bold;
+}
